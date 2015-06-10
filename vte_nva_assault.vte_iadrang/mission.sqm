@@ -1,0 +1,1176 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"camisc3",
+		"vte_weapons_cfg",
+		"CABuildings",
+		"vte_objects_cfg",
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"camisc3",
+		"vte_weapons_cfg",
+		"CABuildings",
+		"vte_objects_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=14470147;
+	class Intel
+	{
+		briefingName="VTE NVA Assault v1.1.3";
+		briefingDescription="SEALs defend Plei Me against NVA/VC assault";
+		year=1995;
+		month=3;
+		day=6;
+		hour=18;
+		minute=0;
+	};
+	class Groups
+	{
+		items=43;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11564.543,50,7888.7197};
+					id=0;
+					side="WEST";
+					vehicle="VTE_sealtl";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="CAPTAIN";
+					skill=1;
+					init="assault1 = group this; this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11623.88,46.656906,7364.0767};
+					id=15;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.2;
+					text="VCStart0";
+				};
+			};
+		};
+		class Item2
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10898.758,37.554138,7716.4658};
+					id=16;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.2;
+					text="VCStart1";
+				};
+			};
+		};
+		class Item3
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11022.998,40.025204,8272.6299};
+					id=17;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.2;
+					text="VCStart2";
+				};
+			};
+		};
+		class Item4
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11435.711,65.817223,8571.2061};
+					id=18;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.2;
+					text="VCStart3";
+				};
+			};
+		};
+		class Item5
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8924.1943,16.126558,3093.1938};
+					special="NONE";
+					id=19;
+					side="EAST";
+					vehicle="VTE_vcsoldier3";
+					leader=1;
+					skill=0.2;
+					init="nva1=group this;";
+				};
+			};
+		};
+		class Item6
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11659.019,50,7900.7085};
+					id=21;
+					side="WEST";
+					vehicle="VTE_armywmedic";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11659.031,50,7902.2031};
+					type="SUPPORT";
+					combatMode="YELLOW";
+					formation="COLUMN";
+					speed="FULL";
+					combat="AWARE";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+		class Item7
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11977.832,49.994999,7850.8975};
+					id=24;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					text="pmc_temp_respawn";
+				};
+			};
+		};
+		class Item8
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11594.543,50,7883.7197};
+					id=11;
+					side="WEST";
+					vehicle="VTE_sealmpk";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item9
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11589.543,50,7883.7197};
+					id=9;
+					side="WEST";
+					vehicle="VTE_sealmpl";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item10
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11584.543,50,7883.7197};
+					id=7;
+					side="WEST";
+					vehicle="VTE_sealmg";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item11
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11579.543,50,7883.7197};
+					id=5;
+					side="WEST";
+					vehicle="VTE_sealgl";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item12
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11574.543,50,7883.7197};
+					id=3;
+					side="WEST";
+					vehicle="VTE_seal";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item13
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11569.543,50,7883.7197};
+					id=1;
+					side="WEST";
+					vehicle="VTE_sealrto";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item14
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11559.543,50,7883.7197};
+					id=2;
+					side="WEST";
+					vehicle="VTE_sealmg";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item15
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11554.543,50,7883.7197};
+					id=4;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item16
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11549.543,50,7883.7197};
+					id=6;
+					side="WEST";
+					vehicle="VTE_sealxm";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item17
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11544.543,50,7883.7197};
+					id=8;
+					side="WEST";
+					vehicle="VTE_sealm3a1";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item18
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11539.543,50,7883.7197};
+					id=10;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item19
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11564.671,55.549999,7881.9258};
+					id=26;
+					side="WEST";
+					vehicle="VTE_sealsg";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item20
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11569.671,55.549999,7876.9258};
+					id=27;
+					side="WEST";
+					vehicle="VTE_sealtl";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item21
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11594.671,55.549999,7876.9258};
+					id=37;
+					side="WEST";
+					vehicle="VTE_seallaw";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item22
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11589.671,55.549999,7876.9258};
+					id=35;
+					side="WEST";
+					vehicle="VTE_sealm3a1";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item23
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11584.671,55.549999,7876.9258};
+					id=33;
+					side="WEST";
+					vehicle="VTE_seal";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item24
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11579.671,55.549999,7876.9258};
+					id=31;
+					side="WEST";
+					vehicle="VTE_sealgl";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item25
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11574.671,55.549999,7876.9258};
+					id=29;
+					side="WEST";
+					vehicle="VTE_sealmg";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item26
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11559.671,55.549999,7876.9258};
+					id=28;
+					side="WEST";
+					vehicle="VTE_sealrto";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item27
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11554.671,55.549999,7876.9258};
+					id=30;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item28
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11549.671,55.549999,7876.9258};
+					id=32;
+					side="WEST";
+					vehicle="VTE_sealxm";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item29
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11544.671,55.549999,7876.9258};
+					id=34;
+					side="WEST";
+					vehicle="VTE_sealmg2";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item30
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11539.671,55.549999,7876.9258};
+					id=36;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item31
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11564.563,55.549999,7873.7686};
+					id=38;
+					side="WEST";
+					vehicle="VTE_sealsg";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item32
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11594.563,55.549999,7868.7686};
+					id=49;
+					side="WEST";
+					vehicle="VTE_seallaw";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item33
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11589.563,55.549999,7868.7686};
+					id=47;
+					side="WEST";
+					vehicle="VTE_sealm3a1";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item34
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11584.563,55.549999,7868.7686};
+					id=45;
+					side="WEST";
+					vehicle="VTE_seal";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item35
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11579.563,55.549999,7868.7686};
+					id=43;
+					side="WEST";
+					vehicle="VTE_sealgl";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item36
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11574.563,55.549999,7868.7686};
+					id=41;
+					side="WEST";
+					vehicle="VTE_sealmg";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item37
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11569.563,55.549999,7868.7686};
+					id=39;
+					side="WEST";
+					vehicle="VTE_sealtl";
+					player="PLAY CDG";
+					leader=1;
+					rank="LIEUTENANT";
+					skill=0.59999996;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item38
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11559.563,55.549999,7868.7686};
+					id=40;
+					side="WEST";
+					vehicle="VTE_sealrto";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item39
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11554.563,55.549999,7868.7686};
+					id=42;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item40
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11549.563,55.549999,7868.7686};
+					id=44;
+					side="WEST";
+					vehicle="VTE_sealxm";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item41
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11544.563,55.549999,7868.7686};
+					id=46;
+					side="WEST";
+					vehicle="VTE_sealmg2";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+		class Item42
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11539.563,55.549999,7868.7686};
+					id=48;
+					side="WEST";
+					vehicle="VTE_sealmedic";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.46666664;
+					init="this addEventHandler ['killed', {[] execVM 'respawnPlayer.sqf'}];";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=7;
+		class Item0
+		{
+			position[]={11600.688,50,7892.6709};
+			id=12;
+			side="EMPTY";
+			vehicle="FlagCarrierUSA";
+			skill=0.2;
+			text="usa";
+		};
+		class Item1
+		{
+			position[]={11615.117,49.994999,7911.4468};
+			azimut=-74.807602;
+			id=13;
+			side="EMPTY";
+			vehicle="VTE_WeaponBoxUS";
+			skill=0.2;
+		};
+		class Item2
+		{
+			position[]={11630.968,49.994999,7911.2827};
+			azimut=118.832;
+			id=14;
+			side="EMPTY";
+			vehicle="VTE_AmmoBoxUS";
+			skill=0.2;
+		};
+		class Item3
+		{
+			position[]={11659.039,50,7895.1709};
+			id=20;
+			side="EMPTY";
+			vehicle="MASH";
+			skill=1;
+		};
+		class Item4
+		{
+			position[]={11623.042,49.994999,7916.8213};
+			azimut=62.686798;
+			id=22;
+			side="EMPTY";
+			vehicle="VTE_AmmoBoxUS";
+			skill=0.2;
+		};
+		class Item5
+		{
+			position[]={11622.1,55.549999,7913.3818};
+			azimut=141.838;
+			id=23;
+			side="EMPTY";
+			vehicle="Land_VTE_barbedwire";
+			skill=0.60000002;
+			text="pmc_center_pos";
+			init="this addAction [""Show mission stats (debug)"",""PMC\PMC_debug.sqf"",[],-2,false]; this addAction [""Call CAS"", ""mando_bombs\mando_airsupportdlg.sqf""];";
+		};
+		class Item6
+		{
+			position[]={11963.269,49.994999,7855.1812};
+			id=25;
+			side="EMPTY";
+			vehicle="VTE_WeaponBoxUS";
+			skill=0.60000002;
+			init="this setDir random 360;";
+		};
+	};
+	class Markers
+	{
+		items=7;
+		class Item0
+		{
+			position[]={11611.415,49.994999,7905.5752};
+			name="start";
+			text="Defend";
+			type="mil_start";
+		};
+		class Item1
+		{
+			position[]={10833.589,34.015835,7637.4868};
+			name="target1";
+			text="NVA Assault";
+			type="Arrow";
+			colorName="ColorRed";
+			angle=62.192276;
+		};
+		class Item2
+		{
+			position[]={10864.016,28.871489,8309.6895};
+			name="target2";
+			type="mil_unknown";
+			colorName="ColorRedAlpha";
+		};
+		class Item3
+		{
+			position[]={11098.314,25.023535,7156.9063};
+			name="target3";
+			type="mil_unknown";
+			colorName="ColorRedAlpha";
+		};
+		class Item4
+		{
+			position[]={630.28815,2.214155,2128.0439};
+			name="CoC_IFMaxRange";
+			text="mortar range";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorGreen";
+			a=0;
+			b=0;
+		};
+		class Item5
+		{
+			position[]={625.53619,2.214155,2114.6865};
+			name="CoC_IFMinRange";
+			text="mortar range";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorRed";
+			a=0;
+			b=0;
+		};
+		class Item6
+		{
+			position[]={11621.916,49.994999,7911.7251};
+			name="respawn_west";
+			markerType="RECTANGLE";
+			type="Flag";
+			a=10;
+			b=10;
+		};
+	};
+	class Sensors
+	{
+		items=6;
+		class Item0
+		{
+			position[]={12103.774,0.31680301,6904.1719};
+			a=0;
+			b=0;
+			timeoutMin=5;
+			timeoutMax=7;
+			age="UNKNOWN";
+			text="alpha radio";
+			expCond="true";
+			expActiv="leader assault1 sideChat ""HERE THEY COME. STAY ALERT GUYS. WE HAVE A LONG NIGHT AHEAD OF US. OVER."";";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={11590.405,49.994999,7900.0405};
+			a=300;
+			b=300;
+			activationBy="EAST";
+			activationType="NOT PRESENT";
+			timeoutMid=3;
+			timeoutMax=5;
+			age="UNKNOWN";
+			text="hq reply";
+			expCond="this && ReadyToEnd";
+			expActiv="PAPABEAR sideChat ""Radio traffic indicates that enemy forces have been repelled, they are bugging out. Good job. Mission is over. HQ out.""; mcomplete = true; ""1"" objStatus ""DONE"";";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={11595.571,49.994999,7895.9985};
+			a=0;
+			b=0;
+			timeoutMid=15;
+			timeoutMax=30;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="mcomplete";
+			expActiv="[] exec ""PMC\movie.sqs"";";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={10347.731,26.708601,7209.2241};
+			a=5000;
+			b=5000;
+			activationBy="EAST";
+			age="UNKNOWN";
+			text="eastarray";
+			expActiv="eastlist = thislist;";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={10448.021,22.382761,7192.5093};
+			a=5000;
+			b=5000;
+			activationBy="WEST";
+			age="UNKNOWN";
+			text="westarray";
+			expActiv="westlist = thislist;";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={11622.23,49.994999,7911.1772};
+			a=25;
+			b=25;
+			activationBy="EAST SEIZED";
+			repeating=1;
+			timeoutMin=5;
+			timeoutMid=5;
+			timeoutMax=5;
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfor overrun the base";
+			expActiv="""respawn_west"" setMarkerPosLocal getPosASL pmc_temp_respawn;";
+			expDesactiv="""respawn_west"" setMarkerPosLocal getPosASL pmc_center_pos;";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=14906371;
+	class Intel
+	{
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=3079171;
+	class Intel
+	{
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=3453443;
+	class Intel
+	{
+	};
+};

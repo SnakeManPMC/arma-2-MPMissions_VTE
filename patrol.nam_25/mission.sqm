@@ -1,0 +1,460 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_air_cfg",
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_air_cfg",
+		"vte_terrain_cfg"
+	};
+	randomSeed=2119171;
+	class Intel
+	{
+		briefingName="Patrol The 'Nam";
+		briefingDescription="Chu Lai 1968 22nd Infantry Div. Patrol";
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=2009;
+		month=10;
+		hour=5;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=6;
+				class Item0
+				{
+					position[]={7727.8838,54.539051,21489.955};
+					azimut=145;
+					id=0;
+					side="WEST";
+					vehicle="VTE_Armyofficer";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=1;
+					text="CaptWillard";
+					description="Captain Willard";
+				};
+				class Item1
+				{
+					position[]={7725.3198,54.40786,21492.602};
+					azimut=145;
+					id=1;
+					side="WEST";
+					vehicle="VTE_armywmedic";
+					player="PLAY CDG";
+					skill=1;
+					text="Crocker";
+					description="Cpl. Crocker";
+				};
+				class Item2
+				{
+					position[]={7723.3193,54.274113,21495.268};
+					azimut=145;
+					id=2;
+					side="WEST";
+					vehicle="VTE_armywgl";
+					player="PLAY CDG";
+					skill=1;
+					text="SgtHawkins";
+					description="SSgt. Hawkins";
+				};
+				class Item3
+				{
+					position[]={7721.2075,54.140427,21497.938};
+					azimut=145;
+					id=3;
+					side="WEST";
+					vehicle="VTE_armywmg";
+					player="PLAY CDG";
+					skill=1;
+					text="Hornster";
+					description="Cpl. Hornster";
+				};
+				class Item4
+				{
+					position[]={7719.0957,54.041862,21499.936};
+					azimut=145;
+					id=4;
+					side="WEST";
+					vehicle="VTE_armysniperw";
+					player="PLAY CDG";
+					skill=1;
+					text="Rio";
+					description="Pvt. Rio";
+				};
+				class Item5
+				{
+					position[]={7717.0942,54.041397,21502.717};
+					azimut=145;
+					id=5;
+					side="WEST";
+					vehicle="VTE_armywrto";
+					player="PLAY CDG";
+					skill=1;
+					text="SgtBronson";
+					description="Sgt. Bronson";
+				};
+			};
+			class Waypoints
+			{
+				items=5;
+				class Item0
+				{
+					position[]={7736.3242,55.036625,21479.986};
+					combatMode="RED";
+					formation="COLUMN";
+					speed="LIMITED";
+					combat="SAFE";
+					class Effects
+					{
+						voice="VTE_man_us_c2_keepupwithmemen";
+					};
+					showWP="ALWAYS";
+				};
+				class Item1
+				{
+					position[]={7765.6563,55.872036,21446.787};
+					combatMode="BLUE";
+					formation="COLUMN";
+					speed="NORMAL";
+					combat="AWARE";
+					class Effects
+					{
+						voice="VTE_man_us_c3_tiringoutsir";
+					};
+					showWP="ALWAYS";
+				};
+				class Item2
+				{
+					position[]={7829.4214,56.753658,21368.746};
+					combatMode="BLUE";
+					formation="COLUMN";
+					speed="LIMITED";
+					combat="AWARE";
+					class Effects
+					{
+						voice="VTE_man_us_c3_enemytakenoutsir";
+					};
+					showWP="ALWAYS";
+				};
+				class Item3
+				{
+					position[]={7843.2969,60.977829,21196.711};
+					combatMode="RED";
+					formation="STAG COLUMN";
+					speed="FULL";
+					combat="COMBAT";
+					class Effects
+					{
+						voice="VTE_man_us_c3_lookanenemy";
+					};
+					showWP="ALWAYS";
+				};
+				class Item4
+				{
+					position[]={8011.4282,55.303619,21149.313};
+					type="SAD";
+					combatMode="RED";
+					formation="STAG COLUMN";
+					speed="FULL";
+					combat="COMBAT";
+					class Effects
+					{
+					};
+					showWP="ALWAYS";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={7639.4678,51.71349,21594.311};
+					azimut=145;
+					special="FLY";
+					id=6;
+					side="WEST";
+					vehicle="VTE_RaiderSAR";
+					leader=1;
+					skill=1;
+				};
+				class Item1
+				{
+					position[]={7614.4487,50.289131,21625.395};
+					azimut=145;
+					special="FLY";
+					id=7;
+					side="WEST";
+					vehicle="VTE_BirdDog";
+					skill=1;
+				};
+			};
+			class Waypoints
+			{
+				items=2;
+				class Item0
+				{
+					position[]={7833.5596,57.245033,21361.553};
+					combatMode="RED";
+					formation="FILE";
+					speed="FULL";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="ALWAYS";
+				};
+				class Item1
+				{
+					position[]={571.83887,12.49428,15179.372};
+					combatMode="RED";
+					formation="FILE";
+					speed="FULL";
+					combat="CARELESS";
+					class Effects
+					{
+					};
+					showWP="ALWAYS";
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7830.8486,57.015728,21364.773};
+					azimut=270;
+					id=8;
+					side="EAST";
+					vehicle="VTE_vcofficer7";
+					leader=1;
+					skill=1;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7830.6646,57.013733,21364.773};
+					type="HOLD";
+					combatMode="BLUE";
+					speed="NORMAL";
+					combat="COMBAT";
+					class Effects
+					{
+					};
+					showWP="ALWAYS";
+				};
+			};
+		};
+		class Item3
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=11;
+				class Item0
+				{
+					position[]={8019.1436,55.007244,21143.381};
+					azimut=315;
+					id=9;
+					side="EAST";
+					vehicle="VTE_vcofficer6";
+					leader=1;
+					skill=1;
+				};
+				class Item1
+				{
+					position[]={8024.5146,54.891197,21143.613};
+					azimut=315;
+					id=10;
+					side="EAST";
+					vehicle="VTE_vcmedic4";
+					skill=1;
+				};
+				class Item2
+				{
+					position[]={8020.7773,54.859249,21138.008};
+					azimut=315;
+					id=11;
+					side="EAST";
+					vehicle="VTE_vcat";
+					skill=1;
+				};
+				class Item3
+				{
+					position[]={8027.0845,54.722198,21138.242};
+					azimut=315;
+					id=12;
+					side="EAST";
+					vehicle="VTE_NVArto";
+					skill=1;
+				};
+				class Item4
+				{
+					position[]={8024.5146,54.678467,21133.336};
+					azimut=315;
+					id=13;
+					side="EAST";
+					vehicle="VTE_vcmg";
+					skill=1;
+				};
+				class Item5
+				{
+					position[]={8033.3906,54.667324,21142.445};
+					azimut=315;
+					id=14;
+					side="EAST";
+					vehicle="VTE_vcmg4";
+					skill=1;
+				};
+				class Item6
+				{
+					position[]={8030.8203,54.551056,21134.035};
+					azimut=315;
+					id=15;
+					side="EAST";
+					vehicle="VTE_vcsoldier16";
+					skill=1;
+				};
+				class Item7
+				{
+					position[]={8033.624,54.56057,21137.541};
+					azimut=315;
+					id=16;
+					side="EAST";
+					vehicle="VTE_vcsoldier3";
+					skill=1;
+				};
+				class Item8
+				{
+					position[]={8027.0845,54.485275,21126.797};
+					azimut=315;
+					id=17;
+					side="EAST";
+					vehicle="VTE_vcsoldier3";
+					skill=1;
+				};
+				class Item9
+				{
+					position[]={8034.0913,54.317924,21126.328};
+					azimut=315;
+					id=18;
+					side="EAST";
+					vehicle="VTE_vcsoldier3";
+					skill=1;
+				};
+				class Item10
+				{
+					position[]={8036.4272,54.391106,21132.402};
+					azimut=315;
+					id=19;
+					side="EAST";
+					vehicle="VTE_vcsoldier3";
+					skill=1;
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8019.1411,55.007252,21143.379};
+					type="HOLD";
+					combatMode="RED";
+					formation="STAG COLUMN";
+					speed="LIMITED";
+					combat="COMBAT";
+					class Effects
+					{
+					};
+					showWP="ALWAYS";
+				};
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=8140803;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=2006;
+		month=10;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=504835;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=2006;
+		month=10;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=8989187;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=2006;
+		month=10;
+		hour=12;
+		minute=0;
+	};
+};

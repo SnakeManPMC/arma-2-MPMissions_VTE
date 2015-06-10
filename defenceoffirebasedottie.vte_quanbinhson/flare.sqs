@@ -1,0 +1,15 @@
+
+_Flare = "F_40mm_white" createVehicle (position flare);
+_Flare setpos [ getPos _Flare select 0, getPos _Flare select 1, 140];
+~5
+
+_Flare = "F_40mm_white" createVehicle (position flare2);
+_Flare setpos [ getPos _Flare select 0, getPos _Flare select 1, 140];
+~5
+
+_Flare = "F_40mm_white" createVehicle (position flare3);
+_Flare setpos [ getPos _Flare select 0, getPos _Flare select 1, 140];
+~5
+
+_Flare = "F_40mm_white" createVehicle (position flare4);
+_Flare setpos [ getPos _Flare select 0, getPos _Flare select 1, 140];

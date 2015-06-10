@@ -1,0 +1,859 @@
+version=11;
+class Mission
+{
+	addOns[]=
+	{
+		"vte_chara_cfg",
+		"vte_air_cfg",
+		"vte_weapons_cfg",
+		"CABuildings",
+		"camisc3",
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_chara_cfg",
+		"vte_air_cfg",
+		"vte_weapons_cfg",
+		"CABuildings",
+		"camisc3",
+		"vte_terrain_cfg"
+	};
+	randomSeed=5707779;
+	class Intel
+	{
+		briefingName="VTE USMC OP 1 v0.3.2";
+		briefingDescription="USMC squad takes on several objectives in the sector.";
+		startWeather=0.4926095;
+		forecastWeather=0.4903909;
+		year=1995;
+		month=9;
+		day=17;
+		hour=10;
+	};
+	class Groups
+	{
+		items=3;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=12;
+				class Item0
+				{
+					position[]={507.75989,6.7049999,6825.3364};
+					id=0;
+					side="WEST";
+					vehicle="VTE_soldierwo";
+					player="PLAYER COMMANDER";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.466667;
+				};
+				class Item1
+				{
+					position[]={512.75983,6.7049999,6820.3364};
+					id=1;
+					side="WEST";
+					vehicle="VTE_soldierwrto";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.466667;
+				};
+				class Item2
+				{
+					position[]={502.75989,6.7049999,6820.3364};
+					id=2;
+					side="WEST";
+					vehicle="VTE_soldierwm14";
+					player="PLAY CDG";
+					rank="SERGEANT";
+					skill=0.466667;
+				};
+				class Item3
+				{
+					position[]={497.75989,6.7049999,6820.3364};
+					id=3;
+					side="WEST";
+					vehicle="VTE_soldierwm14";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.33333299;
+				};
+				class Item4
+				{
+					position[]={517.7597,6.7049999,6820.3364};
+					id=4;
+					side="WEST";
+					vehicle="VTE_soldierwm14";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.33333299;
+				};
+				class Item5
+				{
+					position[]={522.7597,6.7049999,6820.3364};
+					id=5;
+					side="WEST";
+					vehicle="VTE_soldierwmg";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+				class Item6
+				{
+					position[]={492.75989,6.7049999,6820.3364};
+					id=6;
+					side="WEST";
+					vehicle="VTE_soldierwmg";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+				class Item7
+				{
+					position[]={527.7597,6.7049999,6820.3364};
+					id=7;
+					side="WEST";
+					vehicle="VTE_soldierwmedic";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+				class Item8
+				{
+					position[]={487.75989,6.7049999,6820.3364};
+					id=8;
+					side="WEST";
+					vehicle="VTE_soldierwgl";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+				class Item9
+				{
+					position[]={532.7597,6.7049999,6820.3364};
+					id=9;
+					side="WEST";
+					vehicle="VTE_soldierwm14";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+				class Item10
+				{
+					position[]={482.75989,6.7049999,6820.3364};
+					id=10;
+					side="WEST";
+					vehicle="VTE_soldierwm14";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+				class Item11
+				{
+					position[]={537.7597,6.7049999,6820.3364};
+					id=11;
+					side="WEST";
+					vehicle="VTE_soldierwm14";
+					player="PLAY CDG";
+					skill=0.2;
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={435.91046,6.7049999,6912.3003};
+					id=13;
+					side="WEST";
+					vehicle="VTE_acpilot";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.611184;
+				};
+				class Item1
+				{
+					position[]={432.84058,6.7049999,6909.2241};
+					id=14;
+					side="WEST";
+					vehicle="VTE_acpilot";
+					player="PLAY CDG";
+					rank="CORPORAL";
+					skill=0.611184;
+				};
+			};
+		};
+		class Item2
+		{
+			side="EAST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={6315.6914,22.499998,6211.9482};
+					placement=5000;
+					id=15;
+					side="EAST";
+					vehicle="VTE_vcrecon";
+					leader=1;
+					rank="SERGEANT";
+					skill=1;
+					text="vc_snipa1";
+				};
+				class Item1
+				{
+					position[]={6309.6914,22.499998,6208.9482};
+					id=16;
+					side="EAST";
+					vehicle="VTE_vcmark";
+					rank="CORPORAL";
+					skill=1;
+					init="this setpos getPosASL vc_snipa1;";
+				};
+			};
+			class Waypoints
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6315.8608,22.499998,6216.8418};
+					placement=5000;
+					type="GUARD";
+					combatMode="YELLOW";
+					formation="WEDGE";
+					speed="LIMITED";
+					combat="STEALTH";
+					class Effects
+					{
+					};
+					showWP="NEVER";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=6;
+		class Item0
+		{
+			position[]={445.42194,6.7049999,6922.4106};
+			azimut=-87.772797;
+			id=12;
+			side="EMPTY";
+			vehicle="VTE_ch47ca";
+			skill=0.2;
+		};
+		class Item1
+		{
+			position[]={489.72501,6.7049999,6824.9814};
+			id=17;
+			side="EMPTY";
+			vehicle="VTE_AmmoBoxUS";
+			leader=1;
+			skill=0.73333299;
+		};
+		class Item2
+		{
+			position[]={531.2804,6.7049999,6830.7314};
+			id=18;
+			side="EMPTY";
+			vehicle="MASH";
+			leader=1;
+			skill=0.73333299;
+		};
+		class Item3
+		{
+			position[]={478.64392,6.7049999,6829.6396};
+			id=19;
+			side="EMPTY";
+			vehicle="VTE_WeaponBoxUS";
+			leader=1;
+			skill=0.73333299;
+		};
+		class Item4
+		{
+			position[]={497.87076,6.7049999,6847.894};
+			id=20;
+			side="EMPTY";
+			vehicle="FlagCarrierUSA";
+			leader=1;
+			skill=0.73333299;
+		};
+		class Item5
+		{
+			position[]={444.57358,6.7049999,6922.209};
+			id=21;
+			side="EMPTY";
+			vehicle="HeliH";
+			leader=1;
+			skill=0.73333299;
+		};
+	};
+	class Markers
+	{
+		items=16;
+		class Item0
+		{
+			position[]={507.45749,6.7049999,6833.1211};
+			name="start";
+			text="HQ";
+			type="mil_start";
+			colorName="ColorGreen";
+		};
+		class Item1
+		{
+			position[]={3300.989,12.959999,7001.2642};
+			name="target1";
+			text="Objective 1";
+			type="Flag";
+		};
+		class Item2
+		{
+			position[]={4053.5935,17.955,1674.3564};
+			name="target2";
+			text="Objective 2";
+			type="Flag";
+		};
+		class Item3
+		{
+			position[]={6057.4873,22.455,6896.2217};
+			name="target3";
+			text="Objective 3";
+			type="Flag";
+		};
+		class Item4
+		{
+			position[]={10717.292,44.999996,3194.4036};
+			name="target4";
+			text="Objective 4";
+			type="Flag";
+		};
+		class Item5
+		{
+			position[]={10355.243,17.955,5098.0435};
+			name="target5";
+			text="Objective 5";
+			type="Flag";
+		};
+		class Item6
+		{
+			position[]={9269.2754,17.955,6806.1294};
+			name="target6";
+			text="Objective 6";
+			type="Flag";
+		};
+		class Item7
+		{
+			position[]={7450.1953,12.959999,8559.0957};
+			name="target7";
+			text="Objective 7";
+			type="Flag";
+		};
+		class Item8
+		{
+			position[]={8660.8076,17.955,9827.0322};
+			name="target8";
+			text="Objective 8";
+			type="Flag";
+		};
+		class Item9
+		{
+			position[]={10692.594,40.5,11171.491};
+			name="target9";
+			text="Objective 9";
+			type="Flag";
+		};
+		class Item10
+		{
+			position[]={2675.7114,73.442734,10302.304};
+			name="target10";
+			text="Objective 10";
+			type="Flag";
+		};
+		class Item11
+		{
+			position[]={508.37009,6.7049999,6838.8398};
+			name="respawn_west";
+			type="Empty";
+		};
+		class Item12
+		{
+			position[]={5418.0386,22.499998,7888.3813};
+			name="rainmark";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorBlue";
+			fillName="FDiagonal";
+			a=1500;
+			b=1500;
+			angle=145.683;
+		};
+		class Item13
+		{
+			position[]={8374.2666,28.125479,3637.4949};
+			name="rainmark2";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorBlue";
+			fillName="FDiagonal";
+			a=1500;
+			b=1000;
+			angle=-233.4496;
+		};
+		class Item14
+		{
+			position[]={2921.5649,85.5,4809.4146};
+			name="rainmark3";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorBlue";
+			fillName="FDiagonal";
+			a=1500;
+			b=500;
+			angle=-40.549099;
+		};
+		class Item15
+		{
+			position[]={6536.7227,22.499998,11215.727};
+			name="fogmark";
+			markerType="ELLIPSE";
+			type="Flag";
+			colorName="ColorWhite";
+			a=1000;
+			b=2000;
+			angle=95.099403;
+		};
+	};
+	class Sensors
+	{
+		items=26;
+		class Item0
+		{
+			position[]={3299.5488,12.959999,7001.4741};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 1";
+			name="Obj1Trigger";
+			expActiv="this = [getPosASL Obj1Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={3301.7136,12.959999,7000.27};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 1";
+			expActiv="[""PMC_objective1"", ""succeeded""] call SHK_Taskmaster_Upd; ""target1"" setMarkerColor ""colorGreen""; ""target1"" setMarkerType ""dot""; PMC_opfordead1 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={4051.9292,17.955,1674.3608};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 2";
+			name="Obj2Trigger";
+			expActiv="this = [getPosASL Obj2Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item3
+		{
+			position[]={4054.094,17.955,1673.1567};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 2";
+			expActiv="[""PMC_objective2"", ""succeeded""] call SHK_Taskmaster_Upd; ""target2"" setMarkerColor ""colorGreen""; ""target2"" setMarkerType ""dot""; PMC_opfordead2 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item4
+		{
+			position[]={6055.98,22.455,6896.3555};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 3";
+			name="Obj3Trigger";
+			expActiv="this = [getPosASL Obj3Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item5
+		{
+			position[]={6058.1445,22.455,6895.1514};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 3";
+			expActiv="[""PMC_objective3"", ""succeeded""] call SHK_Taskmaster_Upd; ""target3"" setMarkerColor ""colorGreen""; ""target3"" setMarkerType ""dot""; PMC_opfordead3 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item6
+		{
+			position[]={10715.785,44.999996,3194.5374};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 4";
+			name="Obj4Trigger";
+			expActiv="this = [getPosASL Obj4Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item7
+		{
+			position[]={10717.949,44.999996,3193.3333};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 4";
+			expActiv="[""PMC_objective4"", ""succeeded""] call SHK_Taskmaster_Upd; ""target4"" setMarkerColor ""colorGreen""; ""target4"" setMarkerType ""dot""; PMC_opfordead4 = true;";
+			class Effects
+			{
+			};
+		};
+		class Item8
+		{
+			position[]={10353.736,17.955,5098.1772};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 5";
+			name="Obj5Trigger";
+			expActiv="this = [getPosASL Obj5Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item9
+		{
+			position[]={10355.9,17.955,5096.9731};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 5";
+			expActiv="[""PMC_objective5"", ""succeeded""] call SHK_Taskmaster_Upd; ""target5"" setMarkerColor ""colorGreen""; ""target5"" setMarkerType ""dot""; opfordead5=true;";
+			class Effects
+			{
+			};
+		};
+		class Item10
+		{
+			position[]={9267.7686,17.955,6806.2632};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 6";
+			name="Obj6Trigger";
+			expActiv="this = [getPosASL Obj6Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item11
+		{
+			position[]={9269.9326,17.955,6805.0591};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 6";
+			expActiv="[""PMC_objective6"", ""succeeded""] call SHK_Taskmaster_Upd; ""target6"" setMarkerColor ""colorGreen""; ""target6"" setMarkerType ""dot""; opfordead6=true;";
+			class Effects
+			{
+			};
+		};
+		class Item12
+		{
+			position[]={7448.6885,12.959999,8559.2295};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 7";
+			name="Obj7Trigger";
+			expActiv="this = [getPosASL Obj7Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item13
+		{
+			position[]={7450.8525,12.959999,8558.0254};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 7";
+			expActiv="[""PMC_objective7"", ""succeeded""] call SHK_Taskmaster_Upd; ""target7"" setMarkerColor ""colorGreen""; ""target7"" setMarkerType ""dot""; opfordead7=true;";
+			class Effects
+			{
+			};
+		};
+		class Item14
+		{
+			position[]={8659.3008,17.955,9827.166};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 8";
+			name="Obj8Trigger";
+			expActiv="this = [getPosASL Obj8Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item15
+		{
+			position[]={8661.4648,17.955,9825.9619};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 8";
+			expActiv="[""PMC_objective8"", ""succeeded""] call SHK_Taskmaster_Upd; ""target8"" setMarkerColor ""colorGreen""; ""target8"" setMarkerType ""dot""; opfordead8=true;";
+			class Effects
+			{
+			};
+		};
+		class Item16
+		{
+			position[]={10691.087,40.5,11171.625};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 9";
+			name="Obj9Trigger";
+			expActiv="this = [getPosASL Obj9Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item17
+		{
+			position[]={10693.251,40.5,11170.421};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 9";
+			expActiv="[""PMC_objective9"", ""succeeded""] call SHK_Taskmaster_Upd; ""target9"" setMarkerColor ""colorGreen""; ""target9"" setMarkerType ""dot""; opfordead9=true;";
+			class Effects
+			{
+			};
+		};
+		class Item18
+		{
+			position[]={2674.2046,73.532249,10302.438};
+			a=1500;
+			b=1500;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="BLUFOR present 10";
+			name="Obj10Trigger";
+			expActiv="this = [getPosASL Obj10Trigger] execVM ""PMC\createunits.sqf"";";
+			class Effects
+			{
+			};
+		};
+		class Item19
+		{
+			position[]={2676.3687,73.403709,10301.233};
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			text="opfordead 10";
+			expActiv="[""PMC_objective10"", ""succeeded""] call SHK_Taskmaster_Upd; ""target10"" setMarkerColor ""colorGreen""; ""target10"" setMarkerType ""dot""; opfordead10=true;";
+			class Effects
+			{
+			};
+		};
+		class Item20
+		{
+			position[]={485.57352,6.7049999,6975.5693};
+			a=0;
+			b=0;
+			timeoutMin=5;
+			timeoutMax=7;
+			interruptable=1;
+			age="UNKNOWN";
+			text="mcomplete";
+			expCond="PMC_opfordead1 && PMC_opfordead2 && PMC_opfordead3 && PMC_opfordead4 && PMC_opfordead5 && PMC_opfordead6 && PMC_opfordead7 && PMC_opfordead8 && PMC_opfordead9 && PMC_opfordead10";
+			expActiv="PMC_mcomplete = true; publicVariable ""PMC_mcomplete"";";
+			class Effects
+			{
+				track="vte_bird";
+				titleType="TEXT";
+				title="Mission Accomplished!";
+			};
+		};
+		class Item21
+		{
+			position[]={494.96423,6.7049999,6968.2983};
+			a=0;
+			b=0;
+			interruptable=1;
+			timeoutMin=30;
+			timeoutMid=45;
+			timeoutMax=60;
+			type="END1";
+			age="UNKNOWN";
+			text="END";
+			expCond="PMC_mcomplete";
+			class Effects
+			{
+			};
+		};
+		class Item22
+		{
+			position[]={6521.8701,22.252325,11252.752};
+			a=2000;
+			b=1000;
+			angle=2.4793561;
+			activationBy="WEST";
+			age="UNKNOWN";
+			text="fog";
+			name="foggy";
+			class Effects
+			{
+			};
+		};
+		class Item23
+		{
+			position[]={5397.626,22.499998,7888.5122};
+			a=1500;
+			b=1500;
+			angle=148.438;
+			activationBy="WEST";
+			age="UNKNOWN";
+			text="rain";
+			name="rainy";
+			class Effects
+			{
+			};
+		};
+		class Item24
+		{
+			position[]={2925.9302,85.5,4812.4341};
+			a=1500;
+			b=500;
+			angle=-40.549099;
+			activationBy="WEST";
+			age="UNKNOWN";
+			text="rain";
+			name="rainy3";
+			class Effects
+			{
+			};
+		};
+		class Item25
+		{
+			position[]={8355.8779,27.52899,3641.1414};
+			a=1500;
+			b=1000;
+			angle=-413.41034;
+			activationBy="WEST";
+			age="UNKNOWN";
+			text="rain";
+			name="rainy2";
+			class Effects
+			{
+			};
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=14513667;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=2006;
+		month=10;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=4285955;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=2006;
+		month=10;
+		hour=12;
+		minute=0;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"vte_terrain_cfg"
+	};
+	addOnsAuto[]=
+	{
+		"vte_terrain_cfg"
+	};
+	randomSeed=666115;
+	class Intel
+	{
+		startWeather=0.12;
+		forecastWeather=0.30000001;
+		year=2006;
+		month=10;
+		hour=12;
+		minute=0;
+	};
+};

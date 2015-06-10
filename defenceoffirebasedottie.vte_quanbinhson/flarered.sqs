@@ -1,0 +1,3 @@
+
+_Flare = "F_40mm_red" createVehicle (position flarered);
+_Flare setpos [ getPos _Flare select 0, getPos _Flare select 1, 200];

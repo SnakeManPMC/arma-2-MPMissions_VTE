@@ -1,0 +1,37 @@
+
+onLoadMission = "The Defence Of Fire Support Base Dottie.";
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 11;
+	playerCountMultipleOf = 1;
+};
+
+disabledAI = 1;
+respawn = Base;
+respawndelay = 15;
+AIkills = 1;
+
+class CfgSounds
+{
+	sounds[] = 
+	{
+		contact, click
+	};
+
+	class contact
+	{
+		name = "contact";
+		sound[] = {"sound\contact.ogg", 0.8, 1.0};
+		titles[] = {};
+	};
+
+	class click
+	{
+		name = "click";
+		sound[] = {"sound\click.ogg", 1, 1.0};
+		titles[] = {};
+	};
+};

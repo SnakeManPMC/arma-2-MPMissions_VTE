@@ -1,0 +1,3 @@
+respawn="group";
+onLoadIntro="PMC LZ";
+onLoadMission="PMC LZ";
