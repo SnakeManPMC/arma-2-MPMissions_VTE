@@ -19,4 +19,4 @@ waitUntil
 	scriptDone _tmp;
 };
 [] execVM "PMC\PMC_war.sqf";
-[] execVM "PMC\PMC_HeloBLUFOR.sqf";
+[] execVM "PMC\PMC_Helo_VTE_BLUFOR.sqf";

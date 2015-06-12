@@ -96,7 +96,7 @@ while {true} do
 
 	diag_log format
 	[
-		"PMC_HeloBLUFOR waitUntil exited... alive: %1, canMove: %2, canFire: %3, fuel: %4, _myVec: %5, alive leader _grp: %6",
+		"PMC_Helo_purecombat_BLUFOR waitUntil exited... alive: %1, canMove: %2, canFire: %3, fuel: %4, _myVec: %5, alive leader _grp: %6",
 		alive _vcl,
 		canMove _vcl,
 		canFire _vcl,
@@ -109,7 +109,7 @@ while {true} do
 	{
 		diag_log format
 		[
-			"PMC_HeloBLUFOR sent to graveyard with... alive: %1, canMove: %2, canFire: %3, fuel: %4, _myVec: %5",
+			"PMC_Helo_purecombat_BLUFOR sent to graveyard with... alive: %1, canMove: %2, canFire: %3, fuel: %4, _myVec: %5",
 			alive _vcl,
 			canMove _vcl,
 			canFire _vcl,

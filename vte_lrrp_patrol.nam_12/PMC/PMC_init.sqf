@@ -45,7 +45,7 @@ waitUntil
 sleep 5;
 
 // blufor patrolling helicopter.
-[] execVM "PMC\PMC_HeloBLUFOR.sqf";
+[(getPosASL CV_helopad_2)] execVM "PMC\PMC_Helo_VTE_BLUFOR.sqf";
 
 // troop transport ferry script. [group, pickup, dropoff]
 _rc = (floor random (count PMC_targets));

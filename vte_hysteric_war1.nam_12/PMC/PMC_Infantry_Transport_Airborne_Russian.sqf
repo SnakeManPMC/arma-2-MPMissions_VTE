@@ -18,12 +18,16 @@ private
 	"_HeloGrp",
 	"_rtb",
 	"_landingzone",
-	"_vcl"
+	"_vcl",
+	"_tmp"
 ];
 
 _grp = _this select 0;
 _rtb = getPosASL (_this select 1);
 _landingzone = getPosASL (_this select 2);
+
+// starting location randomizer
+_rtb = [((_rtb select 0) + random 200),((_rtb select 1) + random 200),200];
 
 // we increment our count for transports active.
 PMC_InfTransport = PMC_InfTransport + 1;
@@ -31,11 +35,10 @@ publicVariable "PMC_InfTransport";
 
 _vcl = objNull;
 _HeloGrp = objNull;
-_HeloGrp = createGroup (east);
-waitUntil
-{
-	!(isNull _HeloGrp);
-};
+_HeloGrp = createGroup east;
+waitUntil {!(isNull _HeloGrp)};
+
+// create ArmA 2 Mi17 and basic RU pilot
 _vcl = createVehicle ["Mi17_rockets_RU", _rtb, [], 0, "FLY"];
 "RU_Soldier_Pilot" createUnit [_rtb, _HeloGrp, "", 1, "SERGEANT"];
 
@@ -72,6 +75,10 @@ leader _HeloGrp sideChat format["This is %1, cargo group %2 onboard, we are lift
 
 // small wait
 sleep 5;
+
+// plotwaypoints stuff
+_tmp = [_vcl, _landingzone] execVM "PMC\PMC_plotWaypoints_Holding_Hands.sqf";
+waitUntil { (scriptDone _tmp); };
 
 // lets wait until he is ready or within 300m of the LZ, or helo cant move.
 waitUntil
@@ -121,7 +128,7 @@ waitUntil
 diag_log format ["Infantry Transport Airborne RU %1, RTB check. unitReady: %2, rtb dist: %3, canMove %4, _rtb: %5", _HeloGrp, unitReady _vcl, (_vcl distance _rtb), canMove _vcl, _rtb];
 
 // if she arrived, if shes ok, then just delete her and her crew.
-if (alive _vcl && alive leader _HeloGrp) then
+if ( (alive _vcl && alive leader _HeloGrp && (_vcl distance _rtb) < 500) ) then
 {
 	diag_log format ["Infantry Transport Airborne RU (%1) %2 has exited with (ALL OK) alive _vcl: %3, alive leader _HeloGrp: %4. POSIT: %5, _rtb: %6", PMC_InfTransport, _HeloGrp, alive _vcl, alive leader _HeloGrp, getPosASL _vcl, _rtb];
 	{

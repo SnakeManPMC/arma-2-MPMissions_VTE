@@ -91,7 +91,7 @@ PMC_plotWaypoints = compile preprocessFileLineNumbers "PMC\PMC_plotWaypoints.sqf
 
 [] execVM "PMC\PMC_war.sqf";
 
-[] execVM "PMC\PMC_HeloBLUFOR.sqf";
+[] execVM "PMC\PMC_Helo_purecombat_BLUFOR.sqf";
 
 // dshkm for couple of spots.
 [] execVM "PMC\PMC_Create_NVA_static_weapon.sqf";

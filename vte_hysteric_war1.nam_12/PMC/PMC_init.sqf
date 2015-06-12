@@ -90,5 +90,5 @@ sleep 2;
 //[] execVM "PMC\PMC_Aircraft_OPFOR_MODIFIED.sqf";
 
 // helicopters
-[(getPosASL pmc_blufor_start_1)] execVM "PMC\PMC_HeloBLUFOR_VTE.sqf";
+[(getPosASL pmc_blufor_start_1)] execVM "PMC\PMC_Helo_VTE_BLUFOR.sqf";
 //[] execVM "PMC\PMC_HeloOPFOR_MODIFIED.sqf";
