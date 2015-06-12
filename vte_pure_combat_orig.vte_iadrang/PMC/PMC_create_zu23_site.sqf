@@ -4,20 +4,30 @@
 
 Pick the position randomly from out PMC_targets gamelogic's array
 
-Requires:
-PMC_targets[] array with the gamelogics info.
-
 Syntax:
 [] execVM "PMC\PMC_create_zu23_site.sqf";
 
+Requires:
+PMC_targets[] array with the gamelogics info.
+PMC\PMC_killed.sqf
+
+Returns:
+-
+
 */
-private [
-	"_tn", "_r", "_t", "_tp", "_grp", "_vcl"
+private
+[
+	"_grp",
+	"_r",
+	"_t",
+	"_tn",
+	"_tp",
+	"_vcl"
 ];
 
 // choose random posit for our site
 _tn = count PMC_targets;
-_r = (round random _tn);
+_r = (floor random _tn);
 _t = (PMC_targets select _r);
 _tp = getPosASL _t;
 
