@@ -38,7 +38,7 @@ waitUntil
 [] execVM "PMC\PMC_create_zu23_site.sqf";
 
 // convoy of trucks
-[] execVM "PMC\PMC_gook_convoy.sqf";
+[] execVM "PMC\PMC_VTE_gook_convoy.sqf";
 
 // main war creation
 [] execVM "PMC\PMC_war.sqf";
