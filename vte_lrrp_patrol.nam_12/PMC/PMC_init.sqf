@@ -32,7 +32,7 @@ waitUntil
 };
 
 // enemy SAM site
-[] execVM "PMC\PMC_create_sam_site.sqf";
+[] execVM "PMC\PMC_create_VTE_sa2_site.sqf";
 
 // enemy ZU23 site
 [] execVM "PMC\PMC_create_zu23_site.sqf";
