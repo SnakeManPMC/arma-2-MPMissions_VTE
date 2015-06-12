@@ -41,4 +41,5 @@ PMC_Sentry_Inf_Waypoints =
 	[_grp, 1] setWaypointSpeed "LIMITED";
 	[_grp, 1] setWaypointFormation "WEDGE";
 	[_grp, 1] setWaypointType "SENTRY";
+	[_grp, 1] setWaypointCompletionRadius 50;
 };

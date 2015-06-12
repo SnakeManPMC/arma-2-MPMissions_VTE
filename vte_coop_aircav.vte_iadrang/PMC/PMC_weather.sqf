@@ -1,3 +1,35 @@
+/*
+
+	Dedicated server capable random weather script.
+
+Syntax:
+[] execVM "PMC\PMC_weather.sqf";
+or
+[OverCastRandomValue] execVM "PMC\PMC_weather.sqf";
+
+Running without params uses default 1.1 overcast random value which is best suited to some vet
+european / jungle environments, but if you want less rainy weather, use lower value by adding it as parameter
+
+Requires:
+PMC\PMC_weather_to_string.sqf
+
+Returns:
+-
+
+*/
+private ["_Overcast_Random_Amount"];
+
+if ((count _this) > 0) then
+{
+	// grab the value from parameter
+	_Overcast_Random_Amount = _this select 0;
+}
+else
+{
+	// user gave no parameter, so we set it to default 1.1 which is often times very rainy
+	// this is how it used to be before adding this parameter option
+	_Overcast_Random_Amount = 1.1;
+};
 
 // this must be if we run this on mission start, the very first time(?).
 if (isNil "PMC_do_overcast") then
@@ -16,6 +48,8 @@ else
 {
 	// some nice weather info for our players.
 	player sideChat PMC_Weather_forecast;
+	// added hint
+	hintSilent PMC_Weather_forecast;
 
 	// change the weather.
 	PMC_WeatherChangeTime setOvercast PMC_do_overcast;
@@ -69,14 +103,17 @@ while rain and fog chances accordingly.
 if (!isServer) exitWith{};
 
 // this is run on server only
-[] spawn
+[_Overcast_Random_Amount] spawn
 {
 	private
 	[
 		"_duration",
 		"_ForeCast",
-		"_minimum_change_time"
+		"_minimum_change_time",
+		"_Overcast_Random_Amount"
 	];
+
+	_Overcast_Random_Amount = _this select 0;
 
 	// one second delay for unknown reasons? :)
 	sleep 1;
@@ -112,8 +149,8 @@ if (!isServer) exitWith{};
 		PMC_WeatherChangeTime = _minimum_change_time;
 		publicVariable "PMC_WeatherChangeTime";
 
-		// set RANDOM overcast, 1.1 ensures we DO get rain sometimes :)
-		PMC_do_overcast = random 1.1;
+		// set RANDOM overcast
+		PMC_do_overcast = random _Overcast_Random_Amount;
 
 		_ForeCast = [PMC_do_overcast] call PMC_weather_to_string;
 

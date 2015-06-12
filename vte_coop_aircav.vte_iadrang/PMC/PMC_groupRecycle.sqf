@@ -24,8 +24,11 @@ waitUntil
 	(count units _grp == 0);
 };
 
-// some debug fun
-diag_log format["PMC_groupRecycle.sqf: _grp: %1, PMC_grpNum: %2", _grp, PMC_grpNum];
+if (PMC_debug) then
+{
+	// some debug fun
+	diag_log format["PMC_groupRecycle.sqf: _grp: %1, PMC_grpNum: %2", _grp, PMC_grpNum];
+};
 
 // delete our group
 deleteGroup _grp;

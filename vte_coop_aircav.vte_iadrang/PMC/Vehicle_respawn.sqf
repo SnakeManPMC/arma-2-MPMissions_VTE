@@ -128,6 +128,18 @@ else
 	false;
 };
 
+/*
+_hasname = false;
+_unitname = vehicleVarName _unit;
+if (isNil "_unitname") then
+{
+	_hasname = false;
+}
+else
+{
+	_hasname = true;
+};
+*/
 _noend = true;
 _run = true;
 _rounds = 0;

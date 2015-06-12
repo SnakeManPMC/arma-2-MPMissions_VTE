@@ -4,7 +4,7 @@
 	init script, run only on server
 
 */
-private ["_tmp"];
+private ["_tmp","_pmc_dshkm_sites","_tp"];
 
 // description.ext mission starting parameters
 skiptime (((paramsarray select 0) - daytime + 24) % 24);
@@ -94,6 +94,11 @@ PMC_plotWaypoints = compile preprocessFileLineNumbers "PMC\PMC_plotWaypoints.sqf
 [] execVM "PMC\PMC_Helo_purecombat_BLUFOR.sqf";
 
 // dshkm for couple of spots.
+// choose random posit for our site
+_pmc_dshkm_sites = [pmc_6, pmc_3, pmc_4];
+// just in case all else fails
+_tp = getPosASL pmc_6;
+_tp = getPosASL (_pmc_dshkm_sites select (floor random (count _pmc_dshkm_sites)));
 [] execVM "PMC\PMC_Create_NVA_static_weapon.sqf";
 
 [] execVM "PMC\PMC_Create_Vehicle_BLUFOR.sqf";

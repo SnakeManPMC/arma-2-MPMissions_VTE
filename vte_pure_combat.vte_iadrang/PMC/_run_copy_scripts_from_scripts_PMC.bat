@@ -3,6 +3,7 @@ set KOPI=copy c:\armap\arma2\Users\SnakeMan\scripts\pmc\
 
 echo "PMC Pure Combat!"
 %KOPI%PMC_corpses.sqf
+%KOPI%PMC_Create_NVA_static_weapon.sqf
 %KOPI%PMC_Create_Zones.sqf
 %KOPI%PMC_groupRecycle.sqf
 %KOPI%PMC_killed.sqf

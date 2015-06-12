@@ -3,7 +3,8 @@
 	PMC Plot Waypoints, long distance waypoint plotting.
 
 Syntax:
-[group, start, end, waypoint completion radius, max distance between waypoints] execVM "PMC\PMC_plotWaypoints.sqf";
+_PMC_plotwaypoints = compile preprocessFileLineNumbers "PMC\PMC_plotWaypoints.sqf";
+_wp = [group, start, end, waypoint completion radius, max distance between waypoints] call _PMC_plotwaypoints;
 
 Returns:
 last waypoint number
@@ -34,8 +35,8 @@ private
 ];
 
 _grp = _this select 0;
-_targetpoint = _this select 1;
-_startingPoint = _this select 2;
+_startingPoint = _this select 1;
+_targetpoint = _this select 2;
 _waypointCompletionRadius = _this select 3;
 _maxDistance = _this select 4;
 
@@ -58,7 +59,7 @@ _Ystart = _startingPoint select 1;
 
 // umm this tries to make the substeps little less, 
 // but still dynamic according to the distance to travel.
-_SubSteps = ((floor (_startingPoint distance _targetpoint)) / _maxDistance);
+_SubSteps = floor ( (_startingPoint distance _targetpoint) / _maxDistance );
 
 _dX = _Xend - _Xstart;
 _dY = _Yend - _Ystart;

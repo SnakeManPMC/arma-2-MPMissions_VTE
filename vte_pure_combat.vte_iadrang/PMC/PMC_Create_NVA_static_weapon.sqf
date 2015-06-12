@@ -5,28 +5,20 @@
 Pick the position randomly from out PMC_targets gamelogic's array
 
 Syntax:
-[] execVM "PMC\PMC_Create_NVA_static_weapon.sqf";
+[_pos] execVM "PMC\PMC_Create_NVA_static_weapon.sqf";
 
 Requires:
 PMC\PMC_killed.sqf
+PMC\PMC_groupRecycle.sqf
 
 Returns:
 -
 
 */
-private ["_grp","_myVcl","_myvehiclelist","_pmc_dshkm_sites","_rveh","_tp","_vcl","_vehlist"];
+private ["_grp","_myVcl","_myvehiclelist","_rveh","_tp","_vcl","_vehlist"];
 
-// choose random posit for our site
-_pmc_dshkm_sites = [pmc_6, pmc_3, pmc_4];
-// just in case all else fails
-_tp = getPosASL pmc_6;
-/*
-_tn = count _pmc_dshkm_sites;
-_r = (floor random _tn);
-_t = (_pmc_dshkm_sites select _r);
-_tp = getPosASL _t;
-*/
-_tp = getPosASL (_pmc_dshkm_sites select (floor random (count _pmc_dshkm_sites)));
+// location for our weapon
+_tp = getPosASL (_this select 0);
 
 _grp = objNull;
 _grp = createGroup east;
@@ -47,7 +39,6 @@ _myvehiclelist =
 	"VTE_dshkmvc"
 ];
 
-
 _vehlist = count _myvehiclelist;
 _rveh = (floor random _vehlist);
 _myVcl = (_myvehiclelist select _rveh);
@@ -65,6 +56,7 @@ _vcl addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 {
 	_x addEventHandler ["killed", {handle = _this execVM "PMC\PMC_killed.sqf"}];
 } foreach units _grp;
+[_grp] execVM "PMC\PMC_groupRecycle.sqf";
 
 _grp setbehaviour "COMBAT";
 _grp setcombatmode "RED";
